@@ -1,0 +1,119 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: #145090;
+    background-color: #FDF5DF;
+}
+
+#skip {
+    position: absolute;
+    left: -200px;
+}
+
+#skip:focus {
+    position: static;
+}
+
+.current {
+    background-color: aqua;
+    border: 2px solid blue;
+}
+
+h1 {
+    text-align: center;
+    margin: auto;
+    font-size: 60px;
+}
+
+h2 {
+    color: #F92C85;
+    font-size: 40px;
+}
+
+img {
+    width: 50%;
+}
+
+p {
+    color: black;
+}
+
+/* NAV BAR */
+
+nav ul {
+    list-style: none;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+nav li a {
+    font-size: 21px;
+}
+
+/* INDEX.HTML */
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.pet-main-image {
+    display: block;
+    margin: auto;
+    animation: spin 4s 10;
+}
+
+@media (prefers-reduced-motion) {
+    .pet-main-image {
+        animation: none;
+    }
+
+    .gif {
+        display: none;
+    }
+}
+
+.pet-description {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.pet-para1 {
+    grid-column-start: 1;
+}
+
+.pet-para2 {
+    grid-column-start: 2;
+}
+
+
+.photo-gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.pet-image1,
+.pet-image3 {
+    grid-column-start: 1;
+    border: 5px solid red;
+    width: 90%;
+}
+
+.pet-image2,
+.pet-image4 {
+    grid-column-start: 2;
+    width: 90%;
+}
+
+
+/* RECIPES.HTML */
+
+
+
+/* TRAVEL.HTML */
