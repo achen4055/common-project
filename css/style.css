@@ -291,9 +291,3 @@ nav li a:hover {
 
 
 /* DESKTOP VIEW */
-
-@media screen and (min-width:600px) {
-    body {
-        font-family: Arial, Helvetica, sans-serif;
-    }
-}
